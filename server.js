@@ -17,6 +17,8 @@ app.use(express.json());
 // Define Routes
 app.use('/api/menu', require('./routes/menuRoutes'));
 app.use('/api/orders', require('./routes/orderRoutes'));
+app.use('/api/auth', require('./routes/authRoutes'));
+
 
 // Root route
 app.get('/', (req, res) => {
